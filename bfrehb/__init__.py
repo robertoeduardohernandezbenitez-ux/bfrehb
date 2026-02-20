@@ -1,6 +1,6 @@
 import networkx as nx
 import itertools  
-
+#This module provides functions to check for Hamiltonian cycles and 3-colorability in graphs using brute-force methods.
 def is_hamiltonian_cycle(graph,cycle):
 #Checks if the given cycle is a Hamiltonian cycle in the graph.
   n=len(set(cycle))
