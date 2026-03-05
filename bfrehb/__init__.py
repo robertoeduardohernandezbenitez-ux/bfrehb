@@ -33,7 +33,7 @@ def is_proper_coloring(graph,coloring):
 
 def is_3_colorable(graph):
   n=graph.order()
-  colorings= product([0,1,2],repeat=n)
+  colorings= itertools.product([0,1,2],repeat=n)
   for coloring in colorings:
     if is_proper_coloring(graph,coloring):
       return coloring
