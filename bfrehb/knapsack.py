@@ -8,6 +8,11 @@ def sum_of_values(values,keys):
     return sum
 
 def knapsap_problem(weigth,profits,capacity, goal):
+    """ 
+    Resuelve el problema de la mochila utilizando fuerza bruta.
+    Devuelve una secuencia de 0 y 1 que indica si se incluye o no cada elemento en la mochila
+    o False si no se encuentra una solución que cumpla con las restricciones.
+    """
     n=len(weigth)
     sequences = product([0, 1], repeat=n)
     for sequence in sequences:
